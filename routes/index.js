@@ -5,7 +5,7 @@ var user = require("../usercontroller/usercontroller")
 
 //  GET home page. 
 router.post('/add', user.addcontact);
- router.get('/view', user.viewcontact);
+ router.get('/', user.viewcontact);
  router.post('/update/:id', user.update);
  router.get('/delete/:id', user.delete);
 
